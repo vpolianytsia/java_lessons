@@ -1,5 +1,4 @@
-
-public abstract class PublicBus extends HumanTransportationsBus {
+public class PublicBus extends HumanTransportationsBus {
 	protected int routeNumber;
 	
 	public PublicBus(String transportNumber, String startPoint, String endPoint, int passangersCount, int routeNumber) {
