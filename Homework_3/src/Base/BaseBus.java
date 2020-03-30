@@ -1,5 +1,6 @@
+package Base;
 
-public abstract class BaseBus {
+public abstract class BaseBus implements BaseBusInterface {
 	private String transportNumber;
 	protected String startPoint;
 	protected String endPoint;
@@ -23,11 +24,25 @@ public abstract class BaseBus {
 		return this.transportNumber;
 	}
 	
+	public void setStartPoint(String startPoint) {
+		this.startPoint = startPoint;
+	}
+
 	public String getStartPoint() {
 		return this.startPoint;
+	}
+	
+	public void setEndPoint(String endPoint) {
+		this.endPoint = endPoint;
 	}
 	
 	public String getEndPoint() {
 		return this.endPoint;
 	}
+	
+	public String getFormattedRoute() {	
+		return this.startPoint + " -  " + this.endPoint;
+	}
+	
+	
 }

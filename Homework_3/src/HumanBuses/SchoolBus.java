@@ -1,3 +1,4 @@
+package HumanBuses;
 
 public final class SchoolBus extends SpecialBus {
 	protected int schoolNumber;
@@ -6,9 +7,12 @@ public final class SchoolBus extends SpecialBus {
 		
 	}
 	
-	public SchoolBus(String transportNumber, String startPoint, String endPoint, int passangersCount, int schoolNumber) {
+	public SchoolBus(String transportNumber, String startPoint, String endPoint, int passangersCount) {		
 		super(transportNumber, startPoint, endPoint, passangersCount);
-		this.schoolNumber = schoolNumber;
+	}
+	
+	public void setSchoolNumber(int value) {
+		this.schoolNumber = value;
 	}
 	
 	public int getSchoolNumber() {
