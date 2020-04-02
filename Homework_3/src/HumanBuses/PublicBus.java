@@ -54,4 +54,19 @@ public class PublicBus extends HumanTransportationsBus {
 		return this.getStartPointAndTime() + " - " + this.getEndPointAndTime();
 	}
 	
+	public String getFormattedRoute() {	
+		return this.startPoint + " ---  " + this.endPoint;
+	}
+	
+	public void runCommand(String command) {
+		System.out.println("Accepted, I'll do " + command);
+	}
+	
+	public void runCommand(int stationId) {
+		System.out.println("I'll go to " + stationId + " station");
+	}
+	
+	public void runCommand(double time) {
+		System.out.println("I'll be there at " + time);
+	}
 }

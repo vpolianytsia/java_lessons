@@ -1,6 +1,6 @@
 package Base;
 
-public abstract class BaseBus implements BaseBusInterface {
+public abstract class BaseBus implements IBus {
 	private String transportNumber;
 	protected String startPoint;
 	protected String endPoint;
