@@ -1,6 +1,7 @@
+package HumanBuses;
+import BasicTypes.HumanTransportationsBus;
 
-public abstract class SpecialBus extends HumanTransportationsBus { 
-	
+public abstract class SpecialBus extends HumanTransportationsBus {
 	public SpecialBus() {
 		
 	}

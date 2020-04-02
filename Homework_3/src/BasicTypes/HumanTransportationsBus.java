@@ -1,3 +1,5 @@
+package BasicTypes;
+import Base.BaseBus;
 
 public abstract class HumanTransportationsBus extends BaseBus {
 	protected String transportationType = "Human transportation";
