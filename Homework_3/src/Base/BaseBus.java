@@ -1,7 +1,8 @@
 package Base;
 
 public abstract class BaseBus implements IBus {
-	private String transportNumber;
+	final String BusStationNumber = "10";
+	private  String transportNumber;
 	protected String startPoint;
 	protected String endPoint;
 	protected String transportationType;
