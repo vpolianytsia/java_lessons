@@ -50,7 +50,7 @@ public class PublicBus extends HumanTransportationsBus {
 		return this.arrivalTime + " " + this.endPoint;
 	}
 	
-	public String getRouteAndShedule() {
+	public final String getRouteAndShedule() {
 		return this.getStartPointAndTime() + " - " + this.getEndPointAndTime();
 	}
 	
