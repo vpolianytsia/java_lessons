@@ -1,16 +1,18 @@
 package Storage;
 
 import java.util.ArrayList;
+
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import java.util.Collection;
 
 import Base.IBus;
 
 import java.util.HashMap;
 import java.util.Map;
-
+import Base.BaseBus;
 public class Storage {
 
 	List<IBus> listPublicBuses;
@@ -19,6 +21,8 @@ public class Storage {
 	Set<IBus> setOfTouristBuses;
 	
 	Map<String, IBus> freightBusesMap;
+
+	List<? extends BaseBus> listOfBuses;
 	
 	public Storage() {
 		listPublicBuses  = new ArrayList<IBus>();
@@ -27,6 +31,8 @@ public class Storage {
 		setOfTouristBuses = new HashSet<IBus>();
 		
 		freightBusesMap  = new HashMap<>();
+	
+		listOfBuses = new ArrayList<>();
 	}
 	
 	
@@ -83,4 +89,18 @@ public class Storage {
 	public Map<String, IBus> getMapFreightBus() {
 		return freightBusesMap;
 	}
+	
+	
+	
+	//new
+	public void printInfoStorage(Map<String, ?> map, String label) {
+		System.out.println(map.get(label));
+	}
+	
+	public void printInfoStorage(Collection<?> list) {
+		for(Object ls : list) {
+			System.out.println("Route " + ls.toString());
+		}
+	}
+	
 }
