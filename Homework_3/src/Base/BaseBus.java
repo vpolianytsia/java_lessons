@@ -41,6 +41,12 @@ public abstract class BaseBus implements IBus {
 		return this.endPoint;
 	}
 	
+	@Override
+	public String toString() {
+		return this.startPoint + " -----  " + this.endPoint;
+		
+	}
+	
 	public String getFormattedRoute() {	
 		return this.startPoint + " -  " + this.endPoint;
 	}
